@@ -1,0 +1,134 @@
+
+== Finding Potential Orphans ==
+
+tig        1 length   2767828 nReads    1712/  11718 -   0 regions covering   0.00 uncovered     0/     0/    0 -- potential orphan
+tig        2 length    216334 nReads     126/    649 -  12 regions covering   6.27 uncovered     0/ 37128/35684 -- too many intervals: is not orphan
+tig        3 length     28873 nReads       9/     43 -   3 regions covering  23.04 uncovered  3572/ 16820/    0 -- ends uncovered: is not orphan
+tig        4 length     14748 nReads       4/      7 -   2 regions covering  90.17 uncovered     4/  1446/    0 -- ends uncovered: is not orphan
+tig        5 length     40052 nReads      23/    137 -   0 regions covering   0.00 uncovered     0/     0/    0 -- potential orphan
+tig        6 length     15021 nReads       5/     16 -   1 regions covering  95.48 uncovered     0/     0/  679 -- ends uncovered: is not orphan
+tig        7 length     16051 nReads       6/      9 -   2 regions covering  10.48 uncovered  5691/  5181/ 3497 -- ends uncovered: is not orphan
+tig        8 length     24850 nReads      10/     29 -   1 regions covering  11.09 uncovered 11330/     0/10763 -- ends uncovered: is not orphan
+tig        9 length     16486 nReads       5/     18 -   0 regions covering   0.00 uncovered     0/     0/    0 -- potential orphan
+
+== Found 0 Potential Orphans ==
+
+
+== Finding Read Placements for Potential Orphans ==
+
+
+== Found 0 placements for 0 reads. ==
+        88209 reads not placed: not in a tig
+        10730 reads not placed: contained
+       100835 reads not placed: not in an orhpan
+
+
+
+== Finding Potential Bubbles ==
+
+tig        1 length   2767828 nReads    1712/  11718 -   0 regions covering   0.00 uncovered     0/     0/    0 -- potential orphan
+tig        2 length    216334 nReads     126/    649 -  12 regions covering   6.27 uncovered     0/ 37128/35684 -- ends uncovered: is not orphan
+tig        3 length     28873 nReads       9/     43 -   3 regions covering  35.41 uncovered     0/ 16820/    0 -- potential orphan
+             tig        1 length   2767828 nReads   11718       1 reads with overlaps
+             tig        2 length    216334 nReads     649       8 reads with overlaps
+tig        4 length     14748 nReads       4/      7 -   2 regions covering  90.20 uncovered     0/  1446/    0 -- potential orphan
+             tig        1 length   2767828 nReads   11718       1 reads with overlaps
+             tig        2 length    216334 nReads     649       4 reads with overlaps
+             tig        3 length     28873 nReads      43       3 reads with overlaps
+             tig        6 length     15021 nReads      16       2 reads with overlaps
+tig        5 length     40052 nReads      23/    137 -   0 regions covering   0.00 uncovered     0/     0/    0 -- potential orphan
+tig        6 length     15021 nReads       5/     16 -   1 regions covering 100.00 uncovered     0/     0/    0 -- potential orphan
+             tig        2 length    216334 nReads     649       5 reads with overlaps
+             tig        8 length     24850 nReads      29       5 reads with overlaps
+tig        7 length     16051 nReads       6/      9 -   2 regions covering  10.48 uncovered  5691/  5181/ 3497 -- ends uncovered: is not orphan
+tig        8 length     24850 nReads      10/     29 -   1 regions covering  11.09 uncovered 11330/     0/10763 -- ends uncovered: is not orphan
+tig        9 length     16486 nReads       5/     18 -   0 regions covering   0.00 uncovered     0/     0/    0 -- potential orphan
+
+== Found 3 Potential Orphans ==
+
+
+== Finding Read Placements for Potential Orphans ==
+
+
+== Found 19 placements for 18 reads. ==
+        88209 reads not placed: not in a tig
+        10730 reads not placed: contained
+       100769 reads not placed: not in an orhpan
+
+
+========================================
+Processing potential orphan 3 of length 28873 bp with 43 reads
+
+Find anchors for orphan 3:
+  First read  78357 - unplaced
+   Last read  90252 - placed 4 times
+     Internal reads - placed      0/7      dovetail reads
+                    - placed      1/34     contained reads
+
+ANCHOR READS FAILED TO PLACE.
+
+========================================
+Processing potential orphan 4 of length 14748 bp with 7 reads
+
+Find anchors for orphan 4:
+  First read  56539 - placed 1 time
+   Last read  23861 - placed 2 times
+     Internal reads - placed      2/2      dovetail reads
+                    - placed      2/3      contained reads
+
+  Intervals (first read):
+    tig        3     26411-41159     ->
+
+  Intervals (last read):
+    tig        2     25325-40073     <-
+    tig        6         0-6401      ->
+
+Finding intervals for orphan 4 placed in tig 2.
+
+Finding intervals for orphan 4 placed in tig 3.
+
+Finding intervals for orphan 4 placed in tig 6.
+
+Found 0 target locations
+
+========================================
+Processing potential orphan 6 of length 15021 bp with 16 reads
+
+Find anchors for orphan 6:
+  First read  40852 - placed 1 time
+   Last read  48329 - placed 1 time
+     Internal reads - placed      3/3      dovetail reads
+                    - placed      9/11     contained reads
+
+  Intervals (first read):
+    tig        8      6896-21917     <-
+
+  Intervals (last read):
+    tig        8      6902-21923     <-
+
+Finding intervals for orphan 6 placed in tig 8.
+       6902-21917       100.0% of orphan length - first read at     10851-21917     last read at      6902-16577      SUCCESS!
+
+Found 1 target location
+
+Removing duplicate placements.
+
+Placing orphan 6 (length 15021) into tig 8 at position 6902-21917 (length 15015):
+    read   40852 at     21917-10851    
+    read   78683 at     20991-13074    
+    read   35593 at     20317-13479    
+    read    2002 at     19968-11857    
+    read   26377 at     19867-10311    
+    read   28173 at     19516-12348    
+    read   66526 at     10924-18212    
+    read   18428 at     17575-10461    
+    read   25338 at     17104-9873     
+    read   48329 at      6902-16577    
+    read   22151 at     15996-7937     
+    read   72252 at     13686-7750     
+    read   51357 at     13359-11132    
+  out of 16 reads, found 13 reads placed, 2 terminal reads
+
+Result:
+  tig        6 of length    15021 with     16 reads - BUBBLE
+

@@ -1,0 +1,15 @@
+trimmomatic/0.39 loaded, see 'module help trimmomatic/0.39' for more information.
+TrimmomaticPE: Started with arguments:
+ -threads 1 ./data/rawdata/illumina/E745-1.L500_SZAXPI015146-56_1_clean.fq.gz ./data/rawdata/illumina/E745-1.L500_SZAXPI015146-56_2_clean.fq.gz ./analyses/illumina_trimmed/E745-1_trimmed_1_paired.fq.gz ./analyses/illumina_trimmed/E745-1_trimmed_1_unpaired.fq.gz ./analyses/illumina_trimmed/E745-1_trimmed_2_paired.fq.gz ./analyses/illumina_trimmed/E745-1_trimmed_2_unpaired.fq.gz ILLUMINACLIP:/sw/bioinfo/trimmomatic/0.39/snowy/adapters/TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred64
+Exception in thread "main" java.io.FileNotFoundException: ./analyses/illumina_trimmed/E745-1_trimmed_1_paired.fq.gz (No such file or directory)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.usadellab.trimmomatic.fastq.FastqSerializer.open(FastqSerializer.java:28)
+	at org.usadellab.trimmomatic.TrimmomaticPE.process(TrimmomaticPE.java:289)
+	at org.usadellab.trimmomatic.TrimmomaticPE.run(TrimmomaticPE.java:555)
+	at org.usadellab.trimmomatic.Trimmomatic.main(Trimmomatic.java:80)

@@ -1,0 +1,22 @@
+lenSuggestCircular sum      72589 (genomeSize 3000000)
+lenSuggestCircular num          3
+lenSuggestCircular ave      24196
+lenUnassembled sum     169922 (genomeSize 3000000)
+lenUnassembled num         33
+lenUnassembled ave       5149
+lenBubble sum      15021 (genomeSize 3000000)
+lenBubble num          1
+lenBubble ave      15021
+lenContig ng10     2767828 bp   lg10       1   sum    2767828 bp
+lenContig ng20     2767828 bp   lg20       1   sum    2767828 bp
+lenContig ng30     2767828 bp   lg30       1   sum    2767828 bp
+lenContig ng40     2767828 bp   lg40       1   sum    2767828 bp
+lenContig ng50     2767828 bp   lg50       1   sum    2767828 bp
+lenContig ng60     2767828 bp   lg60       1   sum    2767828 bp
+lenContig ng70     2767828 bp   lg70       1   sum    2767828 bp
+lenContig ng80     2767828 bp   lg80       1   sum    2767828 bp
+lenContig ng90     2767828 bp   lg90       1   sum    2767828 bp
+lenContig ng100      40052 bp   lg100      3   sum    3024214 bp
+lenContig sum    3125222 (genomeSize 3000000)
+lenContig num          8
+lenContig ave     390652

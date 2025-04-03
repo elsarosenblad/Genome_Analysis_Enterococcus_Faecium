@@ -1,0 +1,150 @@
+
+Found perl:
+   /usr/bin/perl
+   This is perl 5, version 16, subversion 3 (v5.16.3) built for x86_64-linux-thread-multi
+
+Found java:
+   /sw/comp/java/x86_64/sun_jdk1.8.0_151/bin/java
+   java version "1.8.0_151"
+
+Found canu:
+   /sw/bioinfo/canu/2.2/rackham/bin/canu
+   canu snapshot v2.2 +0 changes (r10279 af9c6e709ff2d6473cf966702c420b9eb42d9078)
+
+Running job 1 based on command line options.
+Initializing.
+Opening seqStore '../../genome_assembly.seqStore'.
+Correcting reads 1 to 100836.
+  Allowing alignment errors in simple sequence repeats (-s not supplied).
+Reading 337778 corrections from './red.red'.
+Correcting 102473810 bases with 217821 indel adjustments.
+--Allocate 97 + 1 + 3 MB for bases, adjusts and reads.
+Corrected 102388541 bases with 19121 substitutions, 85269 deletions and 132552 insertions.
+Loading overlaps.
+Read_Olaps()--  Loading 983906 overlaps from '../genome_assembly.ovlStore' for reads 1 to 100836
+--Allocate 30 MB for overlaps.
+Read_Olaps()--  Loaded 983906 overlaps -- 493114 normal and 490792 innie.
+Sorting overlaps.
+Recomputing overlaps.
+--Allocate 8 MB for fseq and rseq.
+--Allocate 32 MB for fadj and radj.
+--Allocate 16 MB for pedWorkArea_t.
+-- Allocate 0 MB for Edit_Array pointers.
+Recomputing overlaps -         5 -         5 -    100828
+--Allocate 16 MB for edit array work space 0 (positions 0-4092)
+Recomputing overlaps -         5 -      1029 -    100828
+Recomputing overlaps -         5 -      2053 -    100828
+Recomputing overlaps -         5 -      3077 -    100828
+Recomputing overlaps -         5 -      4101 -    100828
+Recomputing overlaps -         5 -      5125 -    100828
+Recomputing overlaps -         5 -      6149 -    100828
+Recomputing overlaps -         5 -      7173 -    100828
+Recomputing overlaps -         5 -      8197 -    100828
+Recomputing overlaps -         5 -      9221 -    100828
+Recomputing overlaps -         5 -     10245 -    100828
+Recomputing overlaps -         5 -     11269 -    100828
+Recomputing overlaps -         5 -     12293 -    100828
+Recomputing overlaps -         5 -     13317 -    100828
+Recomputing overlaps -         5 -     14341 -    100828
+Recomputing overlaps -         5 -     15365 -    100828
+Recomputing overlaps -         5 -     16389 -    100828
+Recomputing overlaps -         5 -     17413 -    100828
+Recomputing overlaps -         5 -     18437 -    100828
+Recomputing overlaps -         5 -     19461 -    100828
+Recomputing overlaps -         5 -     20485 -    100828
+Recomputing overlaps -         5 -     21509 -    100828
+Recomputing overlaps -         5 -     22533 -    100828
+Recomputing overlaps -         5 -     23557 -    100828
+Recomputing overlaps -         5 -     24581 -    100828
+Recomputing overlaps -         5 -     25605 -    100828
+Recomputing overlaps -         5 -     26629 -    100828
+Recomputing overlaps -         5 -     27653 -    100828
+Recomputing overlaps -         5 -     28677 -    100828
+Recomputing overlaps -         5 -     29701 -    100828
+Recomputing overlaps -         5 -     30725 -    100828
+Recomputing overlaps -         5 -     31749 -    100828
+Recomputing overlaps -         5 -     32773 -    100828
+Recomputing overlaps -         5 -     33797 -    100828
+Recomputing overlaps -         5 -     34821 -    100828
+Recomputing overlaps -         5 -     35845 -    100828
+Recomputing overlaps -         5 -     36869 -    100828
+Recomputing overlaps -         5 -     37893 -    100828
+Recomputing overlaps -         5 -     38917 -    100828
+Recomputing overlaps -         5 -     39941 -    100828
+Recomputing overlaps -         5 -     40965 -    100828
+Recomputing overlaps -         5 -     41989 -    100828
+Recomputing overlaps -         5 -     43013 -    100828
+Recomputing overlaps -         5 -     44037 -    100828
+Recomputing overlaps -         5 -     45061 -    100828
+Recomputing overlaps -         5 -     46085 -    100828
+Recomputing overlaps -         5 -     47109 -    100828
+Recomputing overlaps -         5 -     48133 -    100828
+Recomputing overlaps -         5 -     49157 -    100828
+Recomputing overlaps -         5 -     50181 -    100828
+Recomputing overlaps -         5 -     51205 -    100828
+Recomputing overlaps -         5 -     52229 -    100828
+Recomputing overlaps -         5 -     53253 -    100828
+Recomputing overlaps -         5 -     54277 -    100828
+Recomputing overlaps -         5 -     55301 -    100828
+Recomputing overlaps -         5 -     56325 -    100828
+Recomputing overlaps -         5 -     57349 -    100828
+Recomputing overlaps -         5 -     58373 -    100828
+Recomputing overlaps -         5 -     59397 -    100828
+Recomputing overlaps -         5 -     60421 -    100828
+Recomputing overlaps -         5 -     61445 -    100828
+Recomputing overlaps -         5 -     62469 -    100828
+Recomputing overlaps -         5 -     63493 -    100828
+Recomputing overlaps -         5 -     64517 -    100828
+Recomputing overlaps -         5 -     65541 -    100828
+Recomputing overlaps -         5 -     66565 -    100828
+Recomputing overlaps -         5 -     67589 -    100828
+Recomputing overlaps -         5 -     68613 -    100828
+Recomputing overlaps -         5 -     69637 -    100828
+Recomputing overlaps -         5 -     70661 -    100828
+Recomputing overlaps -         5 -     71685 -    100828
+Recomputing overlaps -         5 -     72709 -    100828
+Recomputing overlaps -         5 -     73733 -    100828
+Recomputing overlaps -         5 -     74757 -    100828
+Recomputing overlaps -         5 -     75781 -    100828
+Recomputing overlaps -         5 -     76805 -    100828
+Recomputing overlaps -         5 -     77829 -    100828
+Recomputing overlaps -         5 -     78853 -    100828
+Recomputing overlaps -         5 -     79877 -    100828
+Recomputing overlaps -         5 -     80901 -    100828
+Recomputing overlaps -         5 -     81925 -    100828
+Recomputing overlaps -         5 -     82949 -    100828
+Recomputing overlaps -         5 -     83973 -    100828
+Recomputing overlaps -         5 -     84997 -    100828
+Recomputing overlaps -         5 -     86021 -    100828
+Recomputing overlaps -         5 -     87045 -    100828
+Recomputing overlaps -         5 -     88069 -    100828
+Recomputing overlaps -         5 -     89093 -    100828
+Recomputing overlaps -         5 -     90117 -    100828
+Recomputing overlaps -         5 -     91141 -    100828
+Recomputing overlaps -         5 -     92165 -    100828
+Recomputing overlaps -         5 -     93189 -    100828
+Recomputing overlaps -         5 -     94213 -    100828
+Recomputing overlaps -         5 -     95237 -    100828
+Recomputing overlaps -         5 -     96261 -    100828
+Recomputing overlaps -         5 -     97285 -    100828
+Recomputing overlaps -         5 -     98309 -    100828
+Recomputing overlaps -         5 -     99333 -    100828
+Recomputing overlaps -         5 -    100357 -    100828
+
+--  Release bases, adjusts and reads.
+Olaps Fwd 493114
+Olaps Rev 490792
+Total:  983906
+Failed: 1176 (both)
+Failed: 4578 (either)
+Failed: 4578 (match to end)
+Failed: 1176 (negative length)
+Changed 979328 overlaps.
+Better: 954263 overlaps.
+Worse:  18 overlaps.
+Same:   25047 overlaps.
+Sorting overlaps.
+Saving corrected error rates to file ./00001.oea.WORKING
+--Allocate 1 MB for output error rates.
+
+Bye.

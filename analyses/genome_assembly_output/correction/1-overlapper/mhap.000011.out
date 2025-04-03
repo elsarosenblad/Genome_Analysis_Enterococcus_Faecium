@@ -1,0 +1,83 @@
+
+Found perl:
+   /usr/bin/perl
+   This is perl 5, version 16, subversion 3 (v5.16.3) built for x86_64-linux-thread-multi
+
+Found java:
+   /sw/comp/java/x86_64/sun_jdk1.8.0_151/bin/java
+   java version "1.8.0_151"
+
+Found canu:
+   /sw/bioinfo/canu/2.2/rackham/bin/canu
+   canu snapshot v2.2 +0 changes (r10279 af9c6e709ff2d6473cf966702c420b9eb42d9078)
+
+Running job 11 based on command line options.
+Fetch blocks/000006.dat
+Fetch blocks/000007.dat
+
+Running block 000005 in query 000011
+
+Running with these settings:
+--filter-threshold = 1.0E-7
+--help = false
+--max-shift = 0.2
+--min-olap-length = 500
+--min-store-length = 0
+--no-rc = false
+--no-self = false
+--no-tf = false
+--num-hashes = 256
+--num-min-matches = 3
+--num-threads = 4
+--ordered-kmer-size = 14
+--ordered-sketch-size = 1000
+--repeat-idf-scale = 10.0
+--repeat-weight = 0.9
+--settings = 0
+--store-full-id = true
+--supress-noise = 0
+--threshold = 0.8
+--version = false
+-f = 
+-h = false
+-k = 16
+-p = 
+-q = queries/000011
+-s = ./blocks/000005.dat
+
+Processing files for storage in reverse index...
+Current # sequences loaded and processed from file: 5000...
+Current # sequences loaded and processed from file: 10000...
+Current # sequences loaded and processed from file: 15000...
+Current # sequences loaded and processed from file: 20000...
+Current # sequences loaded and processed from file: 25000...
+Current # sequences loaded and processed from file: 30000...
+Current # sequences stored: 5000...
+Current # sequences stored: 10000...
+Current # sequences stored: 15000...
+Current # sequences stored: 20000...
+Current # sequences stored: 25000...
+Current # sequences stored: 30000...
+Stored 32400 sequences in the index.
+Processed 32400 unique sequences (fwd and rev).
+Time (s) to read and hash from file: 6.395849841
+Time (s) to score and output to self: 3.624086532
+Opened fasta file /domus/h1/elro9391/Genome_Analysis_Enterococcus_Faecium/analyses/genome_assembly_output/correction/1-overlapper/blocks/000006.dat.
+Current # sequences loaded and processed from file: 5000...
+Current # sequences loaded and processed from file: 10000...
+Current # sequences loaded and processed from file: 15000...
+Processed 16200 to sequences.
+Time (s) to score, hash to-file, and output: 4.676111526000001
+Opened fasta file /domus/h1/elro9391/Genome_Analysis_Enterococcus_Faecium/analyses/genome_assembly_output/correction/1-overlapper/blocks/000007.dat.
+Processed 3636 to sequences.
+Time (s) to score, hash to-file, and output: 1.120059549
+Total scoring time (s): 9.433817206
+Total time (s): 15.829831086
+MinHash search time (s): 9.427013995000001
+Total matches found: 140203
+Average number of matches per lookup: 3.8906371406371405
+Average number of table elements processed per lookup: 207.79528804528803
+Average number of table elements processed per match: 53.40906400005706
+Average % of hashed sequences hit per lookup: 0.1959531380827677
+Average % of hashed sequences hit that are matches: 6.128066863559019
+Average % of hashed sequences fully compared that are matches: 73.39356851577509

@@ -1,0 +1,13 @@
+Job 1 computes block 1 vs blocks 2-3 (and self),
+Job 2 computes block 1 vs blocks 4-5,
+Job 3 computes block 1 vs blocks 6-7,
+Job 4 computes block 2 vs blocks 3-4 (and self),
+Job 5 computes block 2 vs blocks 5-6,
+Job 6 computes block 2 vs blocks 7-7,
+Job 7 computes block 3 vs blocks 4-5 (and self),
+Job 8 computes block 3 vs blocks 6-7,
+Job 9 computes block 4 vs blocks 5-6 (and self),
+Job 10 computes block 4 vs blocks 7-7,
+Job 11 computes block 5 vs blocks 6-7 (and self),
+Job 12 computes block 6 vs blocks 7-7 (and self),
+Job 13 computes block 7 vs itself.

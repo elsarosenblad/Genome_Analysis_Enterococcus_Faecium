@@ -1,0 +1,8 @@
+tig      2 read   14760 3' intersects tig      1 read    2082 5' (#161).
+isFwd 1 is3p 0 isBgn 0 isEnd 0 nr 1
+tig      5 read   64857 5' intersects tig      5 read     109 3' (#22).
+isFwd 1 is3p 1 isBgn 0 isEnd 1 nr 1
+tig      5 read   64857 5' intersects tig      5 read     109 3' and it's a potential spur.
+tig      5 read     109 3' intersects tig      5 read   64857 5' (#22).
+isFwd 0 is3p 0 isBgn 0 isEnd 1 nr 0
+tig      5 read     109 3' intersects tig      5 read   64857 5' and it's a potential spur.

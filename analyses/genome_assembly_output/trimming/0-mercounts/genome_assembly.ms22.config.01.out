@@ -1,0 +1,54 @@
+
+Found 1 command tree.
+
+Counting 102 (estimated) million canonical 22-mers from 1 input file:
+    canu-seqStore: ../../genome_assembly.seqStore
+
+
+SIMPLE MODE
+-----------
+
+  Not possible.
+
+
+COMPLEX MODE
+------------
+
+prefix     # of   struct   kmers/    segs/      min     data    total
+  bits   prefix   memory   prefix   prefix   memory   memory   memory
+------  -------  -------  -------  -------  -------  -------  -------
+     1     2  P   555 kB    25 MM    34 kS  8192  B   274 MB   275 MB
+     2     4  P   548 kB    12 MM    16 kS    16 kB   268 MB   268 MB
+     3     8  P   548 kB  6535 kM  8377  S    32 kB   261 MB   262 MB
+     4    16  P   561 kB  3267 kM  4086  S    64 kB   255 MB   255 MB
+     5    32  P   599 kB  1633 kM  1992  S   128 kB   249 MB   249 MB
+     6    64  P   687 kB   816 kM   971  S   256 kB   242 MB   243 MB
+     7   128  P   877 kB   408 kM   473  S   512 kB   236 MB   237 MB
+     8   256  P  1268 kB   204 kM   230  S  1024 kB   230 MB   231 MB
+     9   512  P  2064 kB   102 kM   112  S  2048 kB   224 MB   226 MB
+    10  1024  P  3672 kB    51 kM    55  S  4096 kB   220 MB   223 MB  Best Value!
+    11  2048  P  6896 kB    25 kM    27  S  8192 kB   216 MB   222 MB
+    12  4096  P    13 MB    12 kM    13  S    16 MB   208 MB   221 MB
+    13  8192  P    25 MB  6536  M     7  S    32 MB   224 MB   249 MB
+    14    16 kP    50 MB  3268  M     3  S    64 MB   192 MB   242 MB
+    15    32 kP   101 MB  1634  M     2  S   128 MB   256 MB   357 MB
+    16    64 kP   202 MB   817  M     1  S   256 MB   256 MB   458 MB
+    17   128 kP   405 MB   409  M     1  S   512 MB   512 MB   917 MB
+    18   256 kP   810 MB   205  M     1  S  1024 MB  1024 MB  1834 MB
+    19   512 kP  1620 MB   103  M     1  S  2048 MB  2048 MB  3668 MB
+    20  1024 kP  3240 MB    52  M     1  S  4096 MB  4096 MB  7336 MB
+
+
+FINAL CONFIGURATION
+-------------------
+
+Estimated to require 440 MB memory out of 3072 MB allowed.
+Estimated to require 2 batches.
+
+Configured complex mode for 0.430 GB memory per batch, and up to 2 batches.
+
+Start counting with THREADED method.
+
+Cleaning up.
+
+Bye.
