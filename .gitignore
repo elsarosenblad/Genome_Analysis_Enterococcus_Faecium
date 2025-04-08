@@ -1,0 +1,44 @@
+# === FASTQ and FASTA files ===
+*.fq
+*.fq.gz
+*.fastq
+*.fastq.gz
+*.fasta
+*.fasta.gz
+
+# === SPAdes and Canu assembly intermediate folders ===
+*.ctgStore/
+*.seqStore/
+*.corStore/
+unitigging/
+correction/
+trimmedReads/
+1-overlapper/
+*.ovlStore/
+*.gkpStore/
+
+# === SPAdes output ===
+spades_output/
+*/spades_output/
+*/spades_hybrid_output/
+
+# === Temporary or output files ===
+*.sam
+*.bam
+*.log
+*.zip
+*.html
+*.tmp
+*.out
+*.err
+
+# === Hidden system files ===
+.DS_Store
+
+# === VS Code settings ===
+.vscode/
+
+# === SLURM logs ===
+*.slurm
+*.e
+*.o
