@@ -13,22 +13,10 @@
 module load bioinfo-tools
 module load FastQC
 
-# Define directories
-RAW_DIR=./data/rawdata/illumina
-TRIMMED_DIR=./analyses/02_preprocessing/trimming
-FASTQC_RAW_OUT=./analyses/02_preprocessing/fastqc_raw
-FASTQC_TRIM_OUT=./analyses/02_preprocessing/fastqc_trim
+# Define paths
+TRIMMED_DIR=./analyses/02_preprocessing/illumina_trimmed
+FASTQC_OUT=./analyses/02_preprocessing/fastqc_trim
 
-# Create output directories if not existing
-mkdir -p $FASTQC_RAW_OUT
-mkdir -p $FASTQC_TRIM_OUT
-
-# Run FastQC on raw reads
-echo "Running FastQC on raw reads..."
-fastqc -t 2 -o $FASTQC_RAW_OUT $RAW_DIR/*.fq.gz
-
-# Run FastQC on trimmed reads
-echo "Running FastQC on trimmed reads..."
-fastqc -t 2 -o $FASTQC_TRIM_OUT $TRIMMED_DIR/*.fq.gz
-
-echo "FastQC analysis complete."
+fastqc -t 2 -o $FASTQC_OUT \
+  $TRIMMED_DIR/E745-1_trimmed_1_paired.fq.gz \
+  $TRIMMED_DIR/E745-1_trimmed_2_paired.fq.gz
