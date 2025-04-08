@@ -1,3 +1,14 @@
+# Additional SPAdes outputs
+*.seq
+*.off
+*.yaml
+*.cfg
+*.info
+.bin_reads/
+pipeline_state/
+configs/
+
+
 # === FASTQ and FASTA files ===
 *.fq
 *.fq.gz
