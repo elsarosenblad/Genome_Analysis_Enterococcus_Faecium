@@ -8,6 +8,12 @@
 pipeline_state/
 configs/
 
+# === SPAdes graph and internal outputs ===
+*.fastg
+*.gfa
+*.paths
+*.lib_data
+
 
 # === FASTQ and FASTA files ===
 *.fq
