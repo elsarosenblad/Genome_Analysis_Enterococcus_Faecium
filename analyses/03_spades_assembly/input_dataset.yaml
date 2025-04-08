@@ -1,0 +1,11 @@
+- "left reads":
+  - "/domus/h1/elro9391/Genome_Analysis_Enterococcus_Faecium/analyses/02_preprocessing/illumina_trimmed/E745-1_trimmed_1_paired.fq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/domus/h1/elro9391/Genome_Analysis_Enterococcus_Faecium/analyses/02_preprocessing/illumina_trimmed/E745-1_trimmed_2_paired.fq.gz"
+  "type": "paired-end"
+- "number": !!int "1"
+  "single reads":
+  - "/domus/h1/elro9391/Genome_Analysis_Enterococcus_Faecium/data/rawdata/nanopore/E745_all.fasta.gz"
+  "type": "nanopore"
