@@ -35,19 +35,7 @@ trimmedReads/
 *.gkpStore/
 
 # === SPAdes outputs to ignore (but keep important files in the folder)
-analyses/03_spades_assembly/*.fastg
-analyses/03_spades_assembly/*.gfa
-analyses/03_spades_assembly/*.paths
-analyses/03_spades_assembly/*.lib_data
-analyses/03_spades_assembly/*.seq
-analyses/03_spades_assembly/*.off
-analyses/03_spades_assembly/*.yaml
-analyses/03_spades_assembly/*.cfg
-analyses/03_spades_assembly/*.info
-analyses/03_spades_assembly/.bin_reads/
-analyses/03_spades_assembly/pipeline_state/
-analyses/03_spades_assembly/configs/
-
+analyses/
 
 # === Temporary or output files ===
 *.sam
