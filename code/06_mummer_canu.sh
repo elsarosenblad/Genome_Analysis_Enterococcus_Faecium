@@ -26,4 +26,4 @@ cd $OUTDIR
 nucmer --prefix=canu_vs_ref "$REF" "$QUERY"
 
 # Create plot
-mummerplot --png --fat --large --layout -p canu_vs_ref canu_vs_ref.filtered.delta
+mummerplot --png --fat --layout -p canu_vs_ref canu_vs_ref.delta
