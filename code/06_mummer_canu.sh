@@ -25,8 +25,5 @@ cd $OUTDIR
 # Run MUMmer
 nucmer --prefix=canu_vs_ref "$REF" "$QUERY"
 
-# Filter alignments
-delta-filter -1 canu_vs_ref.delta > canu_vs_ref.filtered.delta
-
 # Create plot
-mummerplot --png --fat --layout -p canu_vs_ref canu_vs_ref.filtered.delta
+mummerplot --png --fat --large --layout -p canu_vs_ref canu_vs_ref.filtered.delta
