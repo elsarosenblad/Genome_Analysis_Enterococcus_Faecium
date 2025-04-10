@@ -14,8 +14,8 @@ module load bioinfo-tools
 module load MUMmer/4.0.0beta2
 
 # Define input files
-REF=./data/reference_genome/E745_reference.fasta
-QUERY=./analyses/01_canu_assembly/genome_assembly.contigs.fasta.gz
+REF=./data/reference_genome/E745_reference.fasta.gz
+QUERY=./analyses/01_canu_assembly/genome_assembly.contigs.fasta
 OUTDIR=./analyses/05_mummer_canu
 mkdir -p $OUTDIR
 cd $OUTDIR
