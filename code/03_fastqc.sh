@@ -2,9 +2,9 @@
 #SBATCH -A uppmax2025-3-3
 #SBATCH -M snowy
 #SBATCH -p core
-#SBATCH -n 2
+#SBATCH -n 4
 #SBATCH -t 02:00:00
-#SBATCH -J fastqc_RNA
+#SBATCH -J fastqc_rnaseq_trim
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=elsa.rosenblad.9391@student.uu.se
 #SBATCH --output=%x.%j.out
@@ -14,11 +14,10 @@ module load bioinfo-tools
 module load FastQC
 
 # Define paths
-BH_DIR=./data/rawdata/RNA-Seq_BH
-SERUM_DIR=./data/rawdata/RNA-Seq_Serum
-FASTQC_OUT=./analyses/08_fastqc_rnaseq_raw
+TRIM_DIR=./analyses/08_transcriptomic_preprocessing/trimmed
+OUT_DIR=./analyses/08_transcriptomic_preprocessing/fastqc_trim
 
-mkdir -p $FASTQC_OUT
+mkdir -p $OUT_DIR/bh $OUT_DIR/serum
 
-fastqc -t 4 -o $FASTQC_OUT $BH_DIR/*.fastq.gz
-fastqc -t 4 -o $FASTQC_OUT $SERUM_DIR/*.fastq.gz
+fastqc -t 4 -o $OUT_DIR/bh $TRIM_DIR/bh/*.fq.gz
+fastqc -t 4 -o $OUT_DIR/serum $TRIM_DIR/serum/*.fq.gz
