@@ -16,7 +16,7 @@ module load htseq/2.0.2
 # Paths
 GFF_FILE="/home/elro9391/Genome_Analysis_Enterococcus_Faecium/analyses/06_annotation/E745_annotation_clean_fixed.gff"
 
-OUTPUT_DIR="/home/elro9391/Genome_Analysis_Enterococcus_Faecium/analyses/10_readcount_htseq/mapped_counts"
+OUTPUT_DIR="/home/elro9391/Genome_Analysis_Enterococcus_Faecium/analyses/08_readcount_htseq/mapped_counts"
 mkdir -p "$OUTPUT_DIR/bhi"
 mkdir -p "$OUTPUT_DIR/serum"
 

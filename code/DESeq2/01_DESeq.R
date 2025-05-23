@@ -2,7 +2,7 @@
 library(DESeq2)
 
 # Load merged count file
-counts <- read.table("/home/elro9391/Genome_Analysis_Enterococcus_Faecium/analyses/10_readcount_htseq/merge_countfiles.tsv", header=TRUE, row.names=1, sep="\t")
+counts <- read.table("/home/elro9391/Genome_Analysis_Enterococcus_Faecium/analyses/08_readcount_htseq/merge_countfiles.tsv", header=TRUE, row.names=1, sep="\t")
 
 
 # Define sample conditions
@@ -23,7 +23,7 @@ res <- results(dds)
 # Save results
 write.csv(as.data.frame(res), file = "DESeq2_results_serum_vs_bh.csv")
 
-# Optional: order by p-value and save top results
+# order by p-value and save top results, NOT USED
 res_ordered <- res[order(res$pvalue), ]
 write.csv(as.data.frame(res_ordered), file = "DESeq2_results_ordered.csv")
 

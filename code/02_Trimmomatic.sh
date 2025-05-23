@@ -14,7 +14,7 @@ module load trimmomatic
 
 ADAPTERS=/sw/bioinfo/trimmomatic/0.39/snowy/adapters/TruSeq3-PE.fa
 RAW_BASE=./data/rawdata
-OUT_BASE=./analyses/08_transcriptomic_preprocessing/trimmed
+OUT_BASE=./analyses/07_transcriptomic_preprocessing/trimmed
 
 mkdir -p $OUT_BASE/bhi $OUT_BASE/serum
 

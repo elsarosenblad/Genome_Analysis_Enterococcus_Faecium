@@ -14,10 +14,10 @@ module load bioinfo-tools
 module load FastQC
 
 # Define paths
-TRIM_DIR=./analyses/08_transcriptomic_preprocessing/trimmed
-OUT_DIR=./analyses/08_transcriptomic_preprocessing/fastqc_trim
+TRIM_DIR=./analyses/07_transcriptomic_preprocessing/trimmed
+OUT_DIR=./analyses/07_transcriptomic_preprocessing/fastqc_trim
 
 mkdir -p $OUT_DIR/bhi $OUT_DIR/serum
 
-fastqc -t 4 -o $OUT_DIR/bhi $TRIM_DIR/bh/*.fq.gz
+fastqc -t 4 -o $OUT_DIR/bhi $TRIM_DIR/bhi/*.fq.gz
 fastqc -t 4 -o $OUT_DIR/serum $TRIM_DIR/serum/*.fq.gz

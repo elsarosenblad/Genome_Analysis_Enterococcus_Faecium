@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 # Updated base directory
-counts_dir = "/home/elro9391/Genome_Analysis_Enterococcus_Faecium/analyses/10_readcount_htseq"
+counts_dir = "/home/elro9391/Genome_Analysis_Enterococcus_Faecium/analyses/08_readcount_htseq"
 
 # Collect all .txt files from both folders
 count_files = []
