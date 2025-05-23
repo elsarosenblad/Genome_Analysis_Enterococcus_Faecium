@@ -17,12 +17,13 @@ All the scripts mentioned below can be found in the code folder.
   - Annotation of the Canu assembly using Prokka, 07_prokka_annotation.sh
 
 **3. RNA Mapping and Counting**
-  - Quality control of RNA Illumina reads (03_fastqc.sh) followed by mapping to the annotated genome using BWA, 09_BWA_nobackup.sh
-  - Sort and indexing the SAM files usign SAMtools followed by gene quantification with HTSeq, 10_HTSeq.sh
+  - Quality control and trimming of RNA Illumina reads with 02_Trimmomatic.sh and 03_fastqc.sh.
+  - Mapping reads to the annotated genome using BWA and directly converting and sorting to BAM files with SAMtools, 09_BWA_nobackup.sh
+  - Gene quantification with HTSeq, 10_HTSeq.sh
 
 **4. Differential Expression**
-   - Differential Expression statistics/data generated using DESeq2
-   - Result analyzed by using threasholds and plotting using pyhton packages matplotlib, sklearn.
+   - Differential Expression statistics/data generated using DESeq2, 01_DESeq.R and 02_DESeq_batch.sh
+   - Result analyzed by using threasholds and plotting using pyhton packages matplotlib, sklearn. See each graph and data in wiki for specific script.  
   
 
    ### Structure of the github repository
