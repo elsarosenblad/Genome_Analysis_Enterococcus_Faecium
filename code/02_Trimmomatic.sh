@@ -16,7 +16,7 @@ ADAPTERS=/sw/bioinfo/trimmomatic/0.39/snowy/adapters/TruSeq3-PE.fa
 RAW_BASE=./data/rawdata
 OUT_BASE=./analyses/08_transcriptomic_preprocessing/trimmed
 
-mkdir -p $OUT_BASE/bh $OUT_BASE/serum
+mkdir -p $OUT_BASE/bhi $OUT_BASE/serum
 
 # Function to run trimmomatic
 run_trimmomatic () {
@@ -39,9 +39,9 @@ run_trimmomatic () {
     LEADING:3 TRAILING:20 SLIDINGWINDOW:4:20 MINLEN:36
 }
 
-# Run on BH samples
+# Run on BHI samples
 for sid in 1797972 1797973 1797974; do
-  run_trimmomatic ERR${sid} "$RAW_BASE/RNA-Seq_BH" "$OUT_BASE/bh"
+  run_trimmomatic ERR${sid} "$RAW_BASE/RNA-Seq_BH" "$OUT_BASE/bhi"
 done
 
 # Run on Serum samples

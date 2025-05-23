@@ -17,7 +17,7 @@ module load FastQC
 TRIM_DIR=./analyses/08_transcriptomic_preprocessing/trimmed
 OUT_DIR=./analyses/08_transcriptomic_preprocessing/fastqc_trim
 
-mkdir -p $OUT_DIR/bh $OUT_DIR/serum
+mkdir -p $OUT_DIR/bhi $OUT_DIR/serum
 
-fastqc -t 4 -o $OUT_DIR/bh $TRIM_DIR/bh/*.fq.gz
+fastqc -t 4 -o $OUT_DIR/bhi $TRIM_DIR/bh/*.fq.gz
 fastqc -t 4 -o $OUT_DIR/serum $TRIM_DIR/serum/*.fq.gz

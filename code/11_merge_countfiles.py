@@ -6,7 +6,7 @@ counts_dir = "/home/elro9391/Genome_Analysis_Enterococcus_Faecium/analyses/10_re
 
 # Collect all .txt files from both folders
 count_files = []
-for subfolder in ["bh", "serum"]:
+for subfolder in ["bhi", "serum"]:
     sub_path = os.path.join(counts_dir, subfolder)
     for file in os.listdir(sub_path):
         if file.endswith("_counts.txt"):

@@ -17,7 +17,7 @@ module load samtools
 # Paths
 GENOME="./analyses/01_canu_assembly/genome_assembly.contigs.fasta"
 OUTDIR="/proj/uppmax2025-3-3/nobackup/elro9391/mapped_bams"
-mkdir -p "$OUTDIR/bh"
+mkdir -p "$OUTDIR/bhi"
 mkdir -p "$OUTDIR/serum"
 
 # Index the genome if not already indexed
@@ -40,9 +40,9 @@ map_sample() {
   samtools index "$DEST/${SAMPLE}_mapped.bam"
 }
 
-# BH Samples
+# BHI Samples
 for sid in 1797972 1797973 1797974; do
-  map_sample ERR${sid} ./data/rawdata/RNA-Seq_BH "$OUTDIR/bh"
+  map_sample ERR${sid} ./data/rawdata/RNA-Seq_BH "$OUTDIR/bhi"
 done
 
 # Serum Samples

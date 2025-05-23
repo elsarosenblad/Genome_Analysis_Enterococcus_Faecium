@@ -17,11 +17,11 @@ module load htseq/2.0.2
 GFF_FILE="/home/elro9391/Genome_Analysis_Enterococcus_Faecium/analyses/06_annotation/E745_annotation_clean_fixed.gff"
 
 OUTPUT_DIR="/home/elro9391/Genome_Analysis_Enterococcus_Faecium/analyses/10_readcount_htseq/mapped_counts"
-mkdir -p "$OUTPUT_DIR/bh"
+mkdir -p "$OUTPUT_DIR/bhi"
 mkdir -p "$OUTPUT_DIR/serum"
 
-# Loop through BH samples
-for BAM in /proj/uppmax2025-3-3/nobackup/elro9391/mapped_bams/bh/*.bam; do
+# Loop through BHI samples
+for BAM in /proj/uppmax2025-3-3/nobackup/elro9391/mapped_bams/bhi/*.bam; do
     BASENAME=$(basename "$BAM" _mapped.bam)
 
     htseq-count \
@@ -31,7 +31,7 @@ for BAM in /proj/uppmax2025-3-3/nobackup/elro9391/mapped_bams/bh/*.bam; do
         --idattr=locus_tag \
         --mode=union \
         --stranded=reverse \
-        "$BAM" "$GFF_FILE" > "$OUTPUT_DIR/bh/${BASENAME}_counts.txt"
+        "$BAM" "$GFF_FILE" > "$OUTPUT_DIR/bhi/${BASENAME}_counts.txt"
 done
 
 # Loop through Serum samples
